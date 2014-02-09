@@ -1,0 +1,15 @@
+﻿@model MvcApplication1.Models.Admin_Login
+@{
+    ViewBag.Title = "login";
+}
+
+@using (Html.BeginForm("login","Admin",FormMethod.Post))
+{
+    @Html.Label("User Name");
+@Html.TextBox("Name","" ,new {@id = "name"});
+@Html.Label("Password");    
+@Html.Password("pwd","" ,new {@id = "pwd"});
+<input type="submit" value="Login" onclick="" />
+    
+}
+<br><br><br><br><br><br><br><br>
